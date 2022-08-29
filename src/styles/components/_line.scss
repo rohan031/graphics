@@ -1,0 +1,167 @@
+.line {
+	padding-inline: 1em;
+	padding-block: 3em;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 1em;
+		user-select: none;
+	}
+
+	&-inputs {
+		display: grid;
+		gap: 3em;
+
+		button {
+			width: 15rem;
+			margin-inline: auto;
+			padding-block: 0.4em;
+			font-size: 1.3rem;
+			font-weight: 500;
+			border: none;
+			outline: none;
+			border-radius: 0.8em;
+			color: #ededed;
+			background-color: #444444;
+			cursor: pointer;
+
+			&:hover {
+				background-color: lighten($color: #444, $amount: 10);
+			}
+
+			&:active {
+				background-color: darken($color: #444, $amount: 10);
+			}
+		}
+
+		&-item {
+			display: grid;
+			// flex-direction: column;
+			gap: 1em;
+
+			h3 {
+				font-size: 1.4rem;
+				user-select: none;
+			}
+
+			div {
+				display: flex;
+				gap: 1em;
+
+				input {
+					width: 100%;
+				}
+
+				p {
+					font-weight: 500;
+					font-size: 1.1rem;
+					user-select: none;
+				}
+			}
+		}
+	}
+}
+
+.dda-answer {
+	margin-top: 2em;
+
+	h3 {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	&-initial {
+		display: grid;
+		gap: 0.8em;
+
+		outline: 2px solid lightpink;
+		padding-inline: 1em;
+		padding-block: 0.6em;
+
+		margin-bottom: 1em;
+
+		p {
+			font-size: 1.1rem;
+			font-weight: 500;
+		}
+	}
+
+	&-loop {
+		outline: 2px solid lightgreen;
+		padding-inline: 1em;
+		padding-block: 0.6em;
+
+		.format {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0.5em;
+
+			p {
+				font-size: 1.5rem;
+				font-weight: 500;
+			}
+		}
+
+		.answer {
+			display: flex;
+			justify-content: space-between;
+
+			p {
+				font-size: 1.2rem;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.bline-answer {
+	margin-top: 2em;
+
+	h3 {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	&-initial {
+		display: grid;
+		gap: 0.8em;
+
+		outline: 2px solid lightpink;
+		padding-inline: 1em;
+		padding-block: 0.6em;
+
+		margin-bottom: 1em;
+
+		p {
+			font-size: 1.1rem;
+			font-weight: 500;
+		}
+	}
+
+	&-loop {
+		outline: 2px solid lightgreen;
+		padding-inline: 1em;
+		padding-block: 0.6em;
+
+		.format {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0.5em;
+
+			p {
+				font-size: 1.5rem;
+				font-weight: 500;
+			}
+		}
+
+		.answer {
+			display: flex;
+			justify-content: space-between;
+
+			p {
+				font-size: 1.2rem;
+				font-weight: 500;
+			}
+		}
+	}
+}
